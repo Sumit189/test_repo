@@ -22,6 +22,12 @@ def multiply(a: float, b: float) -> float:
     return a * b
 
 
+@mcp.tool()
+def divide(a: float, b: float) -> float:
+    """Divide a by b."""
+    return a / b
+
+
 if __name__ == "__main__":
     print("Calculator MCP Server running...")
     mcp.run(transport="stdio")
